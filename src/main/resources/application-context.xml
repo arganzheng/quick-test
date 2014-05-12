@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+	<context:annotation-config />
+
+	<context:component-scan base-package="me.arganzheng.study" />
+
+	
+
+	<util:map id="languageChangesMap" key-type="java.lang.String"
+		value-type="java.lang.String">
+		<entry key="pt" value="pt" />
+		<entry key="br" value="pt" />
+		<entry key="jp" value="ja" />
+		<entry key="ja" value="ja" />
+		<entry key="ind" value="ind" />
+		<entry key="id" value="ind" />
+		<entry key="en-rin" value="en-rIn" />
+		<entry key="in" value="en-rIn" />
+		<entry key="en" value="en" />
+		<entry key="gb" value="en" />
+		<entry key="th" value="th" />
+		<entry key="ar" value="ar" />
+		<entry key="eg" value="ar" />
+	</util:map>
+
+	<util:map id="enCategoryChangesMap" key-type="java.lang.String"
+		value-type="java.lang.String">
+		<entry key="US/Canada" value="EN_Domestic_News" />
+		<entry key="International" value="EN_World_News" />
+		<entry key="Technology" value="EN_Technology_News" />
+		<entry key="Business" value="EN_Business_News" />
+		<entry key="Sports" value="EN_Sports_News" />
+		<entry key="Entertainment" value="EN_Entertainment_News" />
+		<entry key="Lifestyle" value="EN_Life_News" />
+		<entry key="Sexy Girls" value="EN_Beauty_Sexy_Image" />
+		<entry key="Beautiful Girls" value="EN_Beauty_Image" />
+		<entry key="Religion" value="EN_Religion_Image" />
+		<entry key="Rage Comic" value="EN_CrazyComic_Image" />
+		<entry key="Funny" value="EN_Funny_Image" />
+		<entry key="Facebook Pictures" value="EN_FacebookPictures_Image" />
+		<entry key="Pets" value="EN_Pet_Image" />
+		<entry key="Pop Stars" value="EN_Musician_Image" />
+	</util:map>
+</beans>
